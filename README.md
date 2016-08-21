@@ -11,12 +11,10 @@ Require module, call and get result!
 Call with parameters 'departures' or 'arrivals'.
 
 ```
-var pragueInfo = require('prague-airport-flights-info');
+var pragueAirportInfo = require('prague-airport-flights-info');
 
-const departures = [];
-
-pragueInfo.getFlightInfo('departures', function(obj){
-  departures = obj;
+pragueAirportInfo.getFlightInfo('departures', function(departuresObj){
+  console.log(departuresObj);
 });
 
 ```
