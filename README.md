@@ -13,7 +13,7 @@ Call with parameters 'departures' or 'arrivals'.
 ```
 var pragueAirportInfo = require('prague-airport-flights-info');
 
-pragueAirportInfo.getFlightInfo('departures', function(departuresObj){
+pragueAirportInfo.getFlightsInfo('departures', function(departuresObj){
   console.log(departuresObj);
 });
 

@@ -1,4 +1,4 @@
-exports.getFlightInfo = function(action, callback) {
+exports.getFlightsInfo = function(action, callback) {
 
   var http = require('http');
   var cheerio = require('cheerio');
