@@ -1,4 +1,4 @@
-exports.getFlightInfo = function(action) {
+exports.getFlightInfo = function(action, callback) {
 
   var http = require('http');
   var cheerio = require('cheerio');
@@ -22,6 +22,7 @@ exports.getFlightInfo = function(action) {
 
   var request = http.request(options, function (res) {
       var data = '';
+
       res.on('data', function (chunk) {
           data += chunk;
       });
@@ -61,8 +62,7 @@ exports.getFlightInfo = function(action) {
         });
       }
 
-      console.log(finalObjects);
-      return finalObjects;
+      callback(finalObjects);
 
       });
   });
@@ -70,4 +70,5 @@ exports.getFlightInfo = function(action) {
       console.log(e.message);
   });
   request.end();
+
 }

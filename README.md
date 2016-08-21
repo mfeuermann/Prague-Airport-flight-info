@@ -1,24 +1,30 @@
+# Prague Airport flights info
+
 ## Synopsis
 
-This simple module crawling information about arrivals and departures from Prague International Airport (Vaclav Havel Airport).
-
+Simple module getting information about arrivals and departures from
+Prague International Airport (Vaclav Havels Airport) webpage.
 
 ## Code Example
 
-Simple import module to your node.js project and require library
+Require module, call and get result!
+Call with parameters 'departures' or 'arrivals'.
 
 ```
-Give an example
+var pragueInfo = require('prague-airport-flights-info');
+
+const departures = [];
+
+pragueInfo.getFlightInfo('departures', function(obj){
+  departures = obj;
+});
+
 ```
-
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Marek Feuermann
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+MIT
