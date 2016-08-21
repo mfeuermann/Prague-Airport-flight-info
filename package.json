@@ -1,0 +1,29 @@
+{
+  "name": "prague-airport-flights-info",
+  "version": "0.0.3",
+  "description": "Information about flights",
+  "main": "app.js",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "http": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfeuermann/Prague-Airport-flight-info.git"
+  },
+  "keywords": [
+    "prague",
+    "airport",
+    "flight"
+  ],
+  "author": "Marek Feuermann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mfeuermann/Prague-Airport-flight-info/issues"
+  },
+  "homepage": "https://github.com/mfeuermann/Prague-Airport-flight-info#readme"
+}
