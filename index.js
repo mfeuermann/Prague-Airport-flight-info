@@ -36,7 +36,8 @@ exports.getFlightsInfo = function(action, callback) {
         $('.letistepraha_cms_ui_content_departurearrival_arrival > tbody  > tr').each(function(i, elem) {
 
           const arrivalObj = {dateTime: $(elem.children[1]).text(),
-                              flightNum: $(elem.children[3]).text(),
+                              flightId: $(elem.children[3].children[0].children[1]).text(),
+                              flightNum: $(elem.children[3].children[0].children[0]).text(),
                               Target: $(elem.children[5]).text(),
                               Company: $(elem.children[7]).text(),
                               Terminal: $(elem.children[9]).text(),
@@ -50,7 +51,8 @@ exports.getFlightsInfo = function(action, callback) {
         $('.letistepraha_cms_ui_content_departurearrival_departure > tbody  > tr').each(function(i, elem) {
 
           const arrivalObj = {dateTime: $(elem.children[1]).text(),
-                              flightNum: $(elem.children[3]).text(),
+                              flightId: $(elem.children[3].children[0].children[1]).text(),
+                              flightNum: $(elem.children[3].children[0].children[0]).text(),
                               Target: $(elem.children[5]).text(),
                               Company: $(elem.children[7]).text(),
                               Terminal: $(elem.children[9]).text(),
